@@ -1,0 +1,14 @@
+[package]
+name = "inbox-parser"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mbox-reader = "0.2.0"
+mailparse = "0.14.0"
+chrono = "0.4.23"
+postgres =  { version = "0.19.4", features = ["with-chrono-0_4"] }
+lazy_static = "1.4.0"
+regex = "1.7.0"
